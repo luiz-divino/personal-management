@@ -27,6 +27,7 @@
   "dependencies": {
     "@types/module-alias": "^2.0.4",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "module-alias": "^2.3.4",
     "tsx": "^4.21.0"
