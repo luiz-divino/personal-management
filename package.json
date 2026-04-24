@@ -24,6 +24,8 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@types/module-alias": "^2.0.4",
+    "express": "^5.2.1",
+    "module-alias": "^2.3.4"
   }
 }
