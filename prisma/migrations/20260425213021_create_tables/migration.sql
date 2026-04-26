@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "TaskStatus" AS ENUM ('PEDDING', 'ACTIVE', 'DONE');
+CREATE TYPE "TaskStatus" AS ENUM ('PENDING', 'ACTIVE', 'DONE');
 
 -- CreateEnum
 CREATE TYPE "Priority" AS ENUM ('LOW', 'MEDIUM', 'HIGH');
@@ -20,7 +20,7 @@ CREATE TABLE "tasks" (
     "id" TEXT NOT NULL,
     "title" TEXT NOT NULL,
     "description" TEXT,
-    "status" "TaskStatus" NOT NULL DEFAULT 'PEDDING',
+    "status" "TaskStatus" NOT NULL DEFAULT 'PENDING',
     "priority" "Priority" NOT NULL DEFAULT 'MEDIUM',
     "deadLine" TIMESTAMP(3),
     "user_id" TEXT NOT NULL,
@@ -34,9 +34,9 @@ CREATE TABLE "tasks" (
 CREATE TABLE "expenses" (
     "id" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "amount" INTEGER NOT NULL,
+    "amount" DECIMAL(65,30) NOT NULL,
     "date" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "categoty" TEXT NOT NULL,
+    "category" TEXT NOT NULL,
     "user_id" TEXT NOT NULL,
 
     CONSTRAINT "expenses_pkey" PRIMARY KEY ("id")

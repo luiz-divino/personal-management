@@ -13,7 +13,7 @@ datasource db {
 }
 
 enum TaskStatus {
-  PEDDING
+  PENDING
   ACTIVE
   DONE
 }
@@ -39,7 +39,7 @@ model Task {
   id String @id @default(uuid())
   title String
   description String?
-  status TaskStatus @default(PEDDING)
+  status TaskStatus @default(PENDING)
   priority Priority @default(MEDIUM)
   deadLine DateTime?
   user_id String
@@ -52,9 +52,9 @@ model Task {
 model Expense {
   id String @id @default(uuid())
   description String
-  amount Int
+  amount Decimal
   date DateTime @default(now())
-  categoty String
+  category String
   user_id String
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
   @@map("expenses")
