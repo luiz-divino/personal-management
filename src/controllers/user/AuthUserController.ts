@@ -16,5 +16,5 @@ class AuthUserController {
   }
 }
 
-const authUserController = new AuthUserController();
-export { authUserController };
+export const authUserController = new AuthUserController();
+
