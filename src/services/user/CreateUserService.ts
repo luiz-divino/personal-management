@@ -1,5 +1,6 @@
 import prismaClient from "@src/prisma";
 import bcrypt from "bcrypt";
+
 interface UserData {
   name: string;
   email: string;
