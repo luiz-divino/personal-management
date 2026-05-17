@@ -1,4 +1,4 @@
-import { authUserService } from "@src/services/user/AuthUserService";
+import { authUserService } from "../../services/user/AuthUserService";
 import { Request, Response } from "express";
 
 class AuthUserController {
