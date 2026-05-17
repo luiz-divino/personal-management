@@ -4,9 +4,9 @@
     // Type Acquisition
     "types": ["node"], // Pacotes de tipos a incluir (@types/node)
     "target": "ES2020", // Versão do JavaScript para compilação
-    "module": "node16", // Sistema de módulos (CommonJS para Node.js)
+    "module": "node20", // Sistema de módulos (CommonJS para Node.js)
     "lib": ["ES2020"], // Bibliotecas de tipos incluídas
-    "moduleResolution": "node16", // Estratégia de resolução de módulos (Node.js)
+    "moduleResolution": "nodenext", // Estratégia de resolução de módulos (Node.js)
 
     // Diretórios
     "outDir": "./dist", // Pasta de saída dos arquivos compilados
