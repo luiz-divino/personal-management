@@ -1,6 +1,8 @@
 import prismaClient from "../../prisma/index.js";
 import { compare } from "bcrypt";
-import { sign } from "jsonwebtoken";
+import jsonwebtoken from "jsonwebtoken";
+
+const { sign } = jsonwebtoken;
 
 interface AuthUserServiceProps {
   email: string;
