@@ -20,9 +20,6 @@
     "strictPropertyInitialization": true, // Exige inicialização de propriedades de classe
     "noImplicitThis": true, // Erro quando 'this' tem tipo any implícito
     "alwaysStrict": true, // Emite "use strict" em todos os arquivos
-    "paths": {
-      "@src/*": ["./src/*"]
-    },
     // Additional Checks
     "noUnusedLocals": true, // Erro para variáveis locais não utilizadas
     "noUnusedParameters": true, // Erro para parâmetros não utilizados
@@ -51,5 +48,5 @@
 
   },
   "include": ["src/**/*"], // Arquivos a serem incluídos na compilação
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"] // Arquivos/pastas excluídos
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"] // Arquivos/pastas excluídos
 }
